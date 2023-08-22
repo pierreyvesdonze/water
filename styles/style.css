@@ -451,6 +451,7 @@ DAMAGE SECTION
   height: 200vh;
   margin: 0 15px !important;
   text-align: justify;
+  color: black;
 }
 @media (min-width: 250px) and (max-width: 300px) {
   #damage-section {
