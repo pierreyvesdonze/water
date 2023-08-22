@@ -260,10 +260,10 @@ COMPOSITION SECTION
         font-size: 3em;
     }
     @include xs {
-        height: 150vh;
+        height: 170vh;
     }
     @include sm {
-        height: 150vh;
+        height: 170vh;
     }
 }
 
@@ -348,6 +348,12 @@ Steak
 */
 .steak-section {
     height: 110vh;
+    @include xs {
+        height: 130vh;
+    }
+    @include sm {
+        height: 130vh;
+    }
 }
 .steak-section .flex-left-right .flex-left {
     background-image: url('../images/steak.png');
@@ -361,7 +367,7 @@ Steak
     font-size: 2em;
     font-weight: 400;
     @include xs {
-        margin-top: 120px !important;
+        margin-top: 140px !important;
     }
     @include sm {
         margin-top: 120px !important;
@@ -379,11 +385,11 @@ DAMAGE SECTION
     text-align: justify;
 
     @include xs {
-        height: 380vh;
+        height: 450vh;
     }
 
     @include sm {
-        height: 380vh;
+        height: 450vh;
     }
 
     @include md {
@@ -420,6 +426,13 @@ PRESERVE SECTION
     color: black;
     ul li {
         margin-bottom: 20px;
+    }
+
+    @include xs {
+        height: 120vh;
+    }
+    @include sm {
+        height: 120vh;
     }
 }
 
