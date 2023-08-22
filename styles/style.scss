@@ -256,14 +256,21 @@ COMPOSITION SECTION
 ******************************************
 */
 .composition-section {
+
     h1 {
         font-size: 3em;
     }
+
+    @include xss {
+        height: 190vh;
+    }
+
     @include xs {
         height: 170vh;
     }
+
     @include sm {
-        height: 170vh;
+        height: 2200vh;
     }
 }
 
@@ -279,7 +286,7 @@ COMPOSITION SECTION
     background-repeat: no-repeat;
 }
 
-.composition-section .flex-left-right .flex-left{
+.composition-section .flex-left-right .flex-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -294,17 +301,20 @@ STATE SECTION
 */
 .state-section {
     @include xs {
-        height: 130vh;
+        height: 190vh !important;
     }
+
     @include sm {
-        height: 130vh;
+        height: 190vh !important;
     }
 }
+
 #water-state-container {
     display: flex;
     justify-content: space-around;
     font-size: 3em;
     font-weight: 100 !important;
+
     @include xs {
         flex-wrap: wrap;
     }
@@ -314,14 +324,6 @@ STATE SECTION
     margin-top: 50px;
 }
 
-.MuiBox-root {
-    background-color: #162033cf !important;
-    border: none !important;
-    font-family: "Montserrat", sans-serif !important;
-    border-radius: 15px !important;
-    
-}
-
 /*
 ******************************************
 Survive & Survive
@@ -329,12 +331,23 @@ Survive & Survive
 */
 .survive-section {
     @include xs {
-        height: 130vh;
+        height: 150vh;
     }
+
     @include sm {
-        height: 130vh;
+        height: 150vh;
     }
 }
+
+.cloud-section {
+    @include xs {
+        height: 150vh;
+    }
+    @include sm {
+        height: 150vh;
+    }
+}
+
 .survive-p,
 .cloud-p {
     font-size: 3em;
@@ -348,13 +361,20 @@ Steak
 */
 .steak-section {
     height: 110vh;
-    @include xs {
-        height: 130vh;
+
+    @include xxs {
+        height: 180vh !important;
     }
+
+    @include xs {
+        height: 160vh;
+    }
+
     @include sm {
-        height: 130vh;
+        height: 160vh;
     }
 }
+
 .steak-section .flex-left-right .flex-left {
     background-image: url('../images/steak.png');
     background-size: contain;
@@ -366,9 +386,11 @@ Steak
 .steak-section .flex-left-right .flex-right {
     font-size: 2em;
     font-weight: 400;
+
     @include xs {
         margin-top: 140px !important;
     }
+
     @include sm {
         margin-top: 120px !important;
     }
@@ -383,6 +405,10 @@ DAMAGE SECTION
     height: 200vh;
     margin: 0 15px !important;
     text-align: justify;
+
+    @include xxs {
+        height: 700vh;
+    }
 
     @include xs {
         height: 450vh;
@@ -413,8 +439,8 @@ DAMAGE SECTION
             margin-top: 20px !important;
         }
     }
-        }
-    }
+}
+}
 }
 
 /*
@@ -424,6 +450,7 @@ PRESERVE SECTION
 */
 .preserve-section {
     color: black;
+
     ul li {
         margin-bottom: 20px;
     }
@@ -431,6 +458,7 @@ PRESERVE SECTION
     @include xs {
         height: 120vh;
     }
+
     @include sm {
         height: 120vh;
     }

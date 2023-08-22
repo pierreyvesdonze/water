@@ -4,6 +4,10 @@ MEDIA QUERIES
 ***********************************
 */
 
+
+// Extra small screens
+$breakpoint-xxs: 250px;
+
 // Very small screens
 $breakpoint-xs: 300px;
 
@@ -50,6 +54,13 @@ $breakpoint-xl: 1280px;
 // XSmall devices
 @mixin xs {
   @media (min-width: #{$breakpoint-xs}) and (max-width: #{$breakpoint-sm}) {
+    @content;
+  }
+}
+
+// XXSmall devices
+@mixin xxs {
+  @media (min-width: #{$breakpoint-xxs}) and (max-width: #{$breakpoint-xs}) {
     @content;
   }
 }

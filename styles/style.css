@@ -292,12 +292,12 @@ COMPOSITION SECTION
 }
 @media (min-width: 300px) and (max-width: 576px) {
   .composition-section {
-    height: 130vh;
+    height: 170vh;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .composition-section {
-    height: 130vh;
+    height: 170vh;
   }
 }
 
