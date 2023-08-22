@@ -9,7 +9,7 @@ VARIABLES
 ******************************************
 */
 :root {
-  --body-bg: #1a191f;
+  --body-bg: #ffffff;
   --text-color: rgb(243, 243, 243);
 }
 
@@ -73,13 +73,6 @@ h1 {
   }
 }
 
-.nav {
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  top: 0;
-}
-
 section {
   margin: 0 50px;
   height: 100vh;
@@ -96,12 +89,12 @@ section {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   section {
-    margin: 0 250px;
+    margin: 0 50px;
   }
 }
 @media (min-width: 992px) and (max-width: 1280px) {
   section {
-    margin: 0 270px;
+    margin: 0 65px;
   }
 }
 @media (min-width: 1280px) {
@@ -112,7 +105,7 @@ section {
 
 .fadeIn {
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 1.5s ease-out;
 }
 
 .fadeIn.active {
@@ -151,232 +144,261 @@ section {
   }
 }
 
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 /*
 ******************************************
 INTRO SECTION
 ******************************************
 */
-.intro-text div {
-  margin-bottom: 30px;
-}
-@media (min-width: 300px) and (max-width: 576px) {
-  .intro-text div {
-    text-align: center;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .intro-text div {
-    text-align: center;
-  }
+#intro-section,
+#intro-section-2 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.intro-bg-container {
-  background-image: url("../images/feu-intro.jpg");
-  background-size: contain;
+#intro-bg-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../images/intro.jpg");
+  background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
 }
 @media (min-width: 300px) and (max-width: 576px) {
-  .intro-bg-container {
-    height: 206px;
+  #intro-bg-container {
+    background-image: url("../images/intro-xs.jpg");
     background-position: center;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .intro-bg-container {
-    height: 206px;
+  #intro-bg-container {
+    background-image: url("../images/intro-xs.jpg");
     background-position: center;
   }
 }
+#intro-bg-container .title-intro-1 {
+  color: black;
+  margin: 0;
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  #intro-bg-container .title-intro-1 {
+    color: var(--text-color);
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #intro-bg-container .title-intro-1 {
+    color: var(--text-color);
+  }
+}
 
-/*
-******************************************
-HISTORY SECTION
-******************************************
-*/
-.history-section {
+#intro-bg-container-2 {
+  width: 100%;
   height: 100vh;
-}
-@media (min-width: 300px) and (max-width: 576px) {
-  .history-section {
-    height: 180vh;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .history-section {
-    height: 180vh;
-  }
-}
-.history-section .flex-left-right .flex-left {
-  background-position: left;
-}
-@media (min-width: 300px) and (max-width: 576px) {
-  .history-section .flex-left-right .flex-left {
-    background-position: center;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .history-section .flex-left-right .flex-left {
-    background-position: center;
-  }
-}
-
-#history-bg {
-  background-image: url("../images/sapiens.jpg");
-  background-size: contain;
+  margin: 0;
+  background-image: url("../images/intro-2.jpg");
+  background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
-  height: 425px;
 }
 @media (min-width: 300px) and (max-width: 576px) {
-  #history-bg {
-    height: 232px;
+  #intro-bg-container-2 {
+    background-image: url("../images/intro-xs-2.jpg");
+    background-position: center;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  #history-bg {
-    height: 232px;
+  #intro-bg-container-2 {
+    background-image: url("../images/intro-xs-2.jpg");
+    background-position: center;
+  }
+}
+#intro-bg-container-2 .title-intro-2 {
+  color: var(--primary-color);
+  margin: 0;
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  #intro-bg-container-2 .title-intro-2 {
+    color: var(--text-color);
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #intro-bg-container-2 .title-intro-2 {
+    color: var(--text-color);
+    display: none;
   }
 }
 
-#history-text {
-  text-align: justify;
-  padding-left: 115px;
+.intro-text,
+.intro-text-2 {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: bold;
 }
 @media (min-width: 300px) and (max-width: 576px) {
-  #history-text {
-    padding: 0;
+  .intro-text,
+  .intro-text-2 {
+    text-align: center;
+    top: 15%;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  #history-text {
-    padding: 0;
+  .intro-text,
+  .intro-text-2 {
+    text-align: center;
+    top: 15%;
+  }
+}
+
+.intro-text {
+  bottom: 10px;
+}
+
+.intro-text-2 {
+  top: 160%;
+  color: black;
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  .intro-text-2 {
+    color: var(--primary-color);
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .intro-text-2 {
+    color: var(--primary-color);
   }
 }
 
 /*
 ******************************************
-USE SECTION
+COMPOSITION SECTION
 ******************************************
 */
+.composition-section h1 {
+  font-size: 3em;
+}
 @media (min-width: 300px) and (max-width: 576px) {
-  .use-section {
+  .composition-section {
     height: 130vh;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .use-section {
-    height: 140vh;
+  .composition-section {
+    height: 130vh;
   }
 }
 
-.modal {
+#composition-text p {
+  text-align: justify;
+}
+
+#composition-bg {
+  width: 260px;
+  height: 260px;
+  background: url("../images/h2o.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.composition-section .flex-left-right .flex-left {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#use-btn0 {
-  font-size: 2.3em;
+/*
+******************************************
+STATE SECTION
+******************************************
+*/
+@media (min-width: 300px) and (max-width: 576px) {
+  .state-section {
+    height: 120vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .state-section {
+    height: 120vh;
+  }
 }
 
-#use-btn1 {
-  font-size: 1.1em;
+#water-state-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3em;
+  font-weight: 100 !important;
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  #water-state-container {
+    flex-wrap: wrap;
+  }
 }
 
-#use-btn2 {
-  font-size: 1.5em;
+#water-state-container div:nth-child(2) {
+  margin-top: 50px;
 }
 
-#use-btn3 {
-  font-size: 2em;
-}
-
-#use-btn4 {
-  font-size: 1.3em;
-}
-
-#use-btn5 {
-  font-size: 1.1em;
-}
-
-#use-btn6 {
-  font-size: 1em;
-}
-
-#use-btn7 {
-  font-size: 2em;
-}
-
-#use-btn8 {
-  font-size: 1.1em;
-}
-
-#use-btn9 {
-  font-size: 2em;
+.MuiBox-root {
+  background-color: rgba(22, 32, 51, 0.8117647059) !important;
+  border: none !important;
+  font-family: "Montserrat", sans-serif !important;
+  border-radius: 15px !important;
 }
 
 /*
 ******************************************
-MAKE FIRE SECTION
+Survive & Survive
 ******************************************
 */
-@media (min-width: 300px) and (max-width: 576px) {
-  #make-fire-section {
-    height: 134vh;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  #make-fire-section {
-    height: 134vh;
-  }
-}
-#make-fire-section h1 {
-  margin-bottom: 10px;
-}
-#make-fire-section a {
-  font-size: 0.8em;
-  margin: 45%;
-  padding: 10px;
-}
-
-.accordion:nth-child(1) {
-  border-radius: 20px 20px 0 0 !important;
-}
-
-.accordion:nth-of-type(5) {
-  border-radius: 0 0 20px 20px !important;
+.survive-p,
+.cloud-p {
+  font-size: 3em;
+  text-align: center;
 }
 
 /*
 ******************************************
-STORIES SECTION
+Steak
 ******************************************
 */
-#stories-section {
-  color: black;
-  height: 120vh;
+.steak-section {
+  height: 110vh;
 }
-#stories-section ul li {
-  margin-bottom: 5px;
+
+.steak-section .flex-left-right .flex-left {
+  background-image: url("../images/steak.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+
+.steak-section .flex-left-right .flex-right {
+  font-size: 2em;
+  font-weight: 400;
 }
 @media (min-width: 300px) and (max-width: 576px) {
-  #stories-section {
-    height: 340vh;
+  .steak-section .flex-left-right .flex-right {
+    margin-top: 120px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  #stories-section {
-    height: 300vh;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  #stories-section {
-    height: 200vh;
-  }
-}
-@media (min-width: 992px) and (max-width: 1280px) {
-  #stories-section {
-    height: 200vh;
+  .steak-section .flex-left-right .flex-right {
+    margin-top: 120px !important;
   }
 }
 
@@ -385,59 +407,55 @@ STORIES SECTION
 DAMAGE SECTION
 ******************************************
 */
-#damage-section {
-  color: black;
+.damage-section {
+  height: 200vh;
+  margin: 0 15px !important;
+  text-align: justify;
 }
 @media (min-width: 300px) and (max-width: 576px) {
-  #damage-section {
-    height: 200vh;
+  .damage-section {
+    height: 320vh;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  #damage-section {
-    height: 200vh;
+  .damage-section {
+    height: 320vh;
   }
 }
-#damage-section .flex-left {
-  background: url("../images/skull-fire.png");
+@media (min-width: 768px) and (max-width: 992px) {
+  .damage-section {
+    height: 320vh;
+  }
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+  .damage-section {
+    height: 320vh;
+  }
+}
+.damage-section .flex-left {
+  background: url("../images/skull-water.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 425px;
+  height: 580px;
+  border-radius: 50%;
+}
+.damage-section .flex-right ul li {
+  margin-top: 20px !important;
 }
 
 /*
 ******************************************
-TITLES
+PRESERVE SECTION
 ******************************************
 */
-.titles {
+.preserve-section {
   color: black;
 }
-.titles h2 {
-  font-style: italic;
-  text-align: center;
-  font-weight: 100;
+.preserve-section ul li {
+  margin-bottom: 20px;
 }
 
-#smoke-gif {
-  background: url("../images/smoke.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 425px;
-  width: 425px;
-  border-radius: 50px;
-  background-position: center;
-  margin: auto;
-}
-@media (min-width: 300px) and (max-width: 576px) {
-  #smoke-gif {
-    height: 267px;
-    width: 267px;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  #smoke-gif {
-    height: 267px;
-    width: 267px;
-  }
+.preserve-span {
+  font-size: 1.2em;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
