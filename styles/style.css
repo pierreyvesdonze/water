@@ -290,6 +290,11 @@ COMPOSITION SECTION
 .composition-section h1 {
   font-size: 3em;
 }
+@media (min-width: 250px) and (max-width: 300px) {
+  .composition-section {
+    height: 190vh;
+  }
+}
 @media (min-width: 300px) and (max-width: 576px) {
   .composition-section {
     height: 170vh;
@@ -297,7 +302,7 @@ COMPOSITION SECTION
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .composition-section {
-    height: 170vh;
+    height: 2200vh;
   }
 }
 
@@ -325,14 +330,19 @@ COMPOSITION SECTION
 STATE SECTION
 ******************************************
 */
+@media (min-width: 250px) and (max-width: 300px) {
+  .state-section {
+    height: 210vh !important;
+  }
+}
 @media (min-width: 300px) and (max-width: 576px) {
   .state-section {
-    height: 120vh;
+    height: 210vh !important;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .state-section {
-    height: 120vh;
+    height: 210vh !important;
   }
 }
 
@@ -352,18 +362,33 @@ STATE SECTION
   margin-top: 50px;
 }
 
-.MuiBox-root {
-  background-color: rgba(22, 32, 51, 0.8117647059) !important;
-  border: none !important;
-  font-family: "Montserrat", sans-serif !important;
-  border-radius: 15px !important;
-}
-
 /*
 ******************************************
 Survive & Survive
 ******************************************
 */
+@media (min-width: 300px) and (max-width: 576px) {
+  .survive-section {
+    height: 150vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .survive-section {
+    height: 150vh;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  .cloud-section {
+    height: 150vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .cloud-section {
+    height: 150vh;
+  }
+}
+
 .survive-p,
 .cloud-p {
   font-size: 3em;
@@ -375,8 +400,23 @@ Survive & Survive
 Steak
 ******************************************
 */
-.steak-section {
-  height: 110vh;
+#steak-section {
+  height: 160vh !important;
+}
+@media (min-width: 250px) and (max-width: 300px) {
+  #steak-section {
+    height: 180vh !important;
+  }
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  #steak-section {
+    height: 160vh !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #steak-section {
+    height: 160vh !important;
+  }
 }
 
 .steak-section .flex-left-right .flex-left {
@@ -393,7 +433,7 @@ Steak
 }
 @media (min-width: 300px) and (max-width: 576px) {
   .steak-section .flex-left-right .flex-right {
-    margin-top: 120px !important;
+    margin-top: 140px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -407,39 +447,45 @@ Steak
 DAMAGE SECTION
 ******************************************
 */
-.damage-section {
+#damage-section {
   height: 200vh;
   margin: 0 15px !important;
   text-align: justify;
 }
+@media (min-width: 250px) and (max-width: 300px) {
+  #damage-section {
+    height: 700vh;
+  }
+}
 @media (min-width: 300px) and (max-width: 576px) {
-  .damage-section {
-    height: 320vh;
+  #damage-section {
+    height: 450vh;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .damage-section {
-    height: 320vh;
+  #damage-section {
+    height: 450vh;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .damage-section {
-    height: 320vh;
+  #damage-section {
+    height: 380vh;
   }
 }
 @media (min-width: 992px) and (max-width: 1280px) {
-  .damage-section {
-    height: 320vh;
+  #damage-section {
+    height: 380vh;
   }
 }
-.damage-section .flex-left {
+#damage-section .flex-left-right .flex-left {
   background: url("../images/skull-water.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  width: 100%;
   height: 580px;
   border-radius: 50%;
 }
-.damage-section .flex-right ul li {
+#damage-section .flex-right ul li {
   margin-top: 20px !important;
 }
 
@@ -453,6 +499,16 @@ PRESERVE SECTION
 }
 .preserve-section ul li {
   margin-bottom: 20px;
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  .preserve-section {
+    height: 140vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .preserve-section {
+    height: 120vh;
+  }
 }
 
 .preserve-span {
