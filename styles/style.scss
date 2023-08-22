@@ -260,10 +260,10 @@ COMPOSITION SECTION
         font-size: 3em;
     }
     @include xs {
-        height: 130vh;
+        height: 150vh;
     }
     @include sm {
-        height: 130vh;
+        height: 150vh;
     }
 }
 
@@ -294,10 +294,10 @@ STATE SECTION
 */
 .state-section {
     @include xs {
-        height: 120vh;
+        height: 130vh;
     }
     @include sm {
-        height: 120vh;
+        height: 130vh;
     }
 }
 #water-state-container {
@@ -327,6 +327,14 @@ STATE SECTION
 Survive & Survive
 ******************************************
 */
+.survive-section {
+    @include xs {
+        height: 130vh;
+    }
+    @include sm {
+        height: 130vh;
+    }
+}
 .survive-p,
 .cloud-p {
     font-size: 3em;
@@ -371,19 +379,19 @@ DAMAGE SECTION
     text-align: justify;
 
     @include xs {
-        height: 320vh;
+        height: 380vh;
     }
 
     @include sm {
-        height: 320vh;
+        height: 380vh;
     }
 
     @include md {
-        height: 320vh;
+        height: 380vh;
     }
 
     @include lg {
-        height: 320vh;
+        height: 380vh;
     }
 
     .flex-left {
@@ -397,6 +405,8 @@ DAMAGE SECTION
     .flex-right {
         ul li {
             margin-top: 20px !important;
+        }
+    }
         }
     }
 }
